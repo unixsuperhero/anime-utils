@@ -1,0 +1,1 @@
+javascript: html=document.getElementsByTagName('BODY')[0].innerHTML; document.write(html.match(/video=(http:..[^&]*)/)[1]);

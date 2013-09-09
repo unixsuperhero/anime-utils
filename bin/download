@@ -1,0 +1,22 @@
+#!/bin/bash
+
+cat <<"METADATA" >/dev/null
+  NAME: download
+  DESCRIPTION:
+    Use wget to download the url/file in the OS X
+  clipboard or first argument passed.
+    It uses another script to strip any junk characters
+  from the url, producing a clean filename.
+
+  AUTHOR: Joshua Toyota
+  DATE: 2013-09-06 00:00:00
+
+METADATA
+
+if [[ -z "$1" ]]
+then
+  wget -cO "$(url_filename)" "$(pbpaste)"
+else
+  wget -cO "$(url_filename "$1")" "$1"
+fi
+

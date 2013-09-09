@@ -1,0 +1,1 @@
+javascript:$('script').each(function(i,e){ if(e.innerHTML.match(/filekey=/)){ html=e.innerHTML; window.open(html.replace(/^.*file="([^"]*)";\n.*filekey="([^"]*)";.*$/m, "http://www.videoweed.es/api/player.api.php?key=$2\&pass=undefined\&cid2=1004\&user=undefined\&cid3=undefined\&cid=1\&numOfErrors=0\&file=$1").match(/http:...*player.api.php.*/)[0]); } });
