@@ -47,10 +47,13 @@ blood-lad-01.mp4):
 1. Go to episode page on animefreak.tv
 2. Use the bookmarklets/display-animefreak-mirrors bookmark to show file links
 3. Copy a link
+4. Run these commands in a shell:
 
+````
     $> cd /path/to/show-folder
     $> download
-    $> next\_episode   ### Opens the next episode in vlc media player
+    $> next\_episode
+````
 
 
 ### Listing which episodes haven't been watched yet
